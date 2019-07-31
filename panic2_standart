@@ -1,0 +1,13 @@
+phrase = "Don't panic!"
+plist = list(phrase)  # split to an character array
+print(phrase)  # Don't panic!
+print(plist)  # ['D', 'o', 'n', "'", 't', ' ', 'p', 'a', 'n', 'i', 'c', '!']
+for i in range(4):  # 4-pass cycle
+    plist.pop()  # delete the last element in the list
+plist.pop(0)
+plist.remove("'")
+plist.extend([plist.pop(), plist.pop()])
+plist.insert(2, plist.pop(3))
+new_phrase = ''.join(plist)  # convert array to string
+print(plist)  # ['o', 'n', ' ', 't', 'a', 'p']
+print(new_phrase)  # on tap
