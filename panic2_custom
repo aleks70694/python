@@ -1,0 +1,10 @@
+phrase = "Don't panic!"
+plist = list(phrase)  # split to an character array
+print(phrase)  # Don't panic!
+print(plist)  # ['D', 'o', 'n', "'", 't', ' ', 'p', 'a', 'n', 'i', 'c', '!']
+first_part = ''.join(plist[1:3])  
+two_part = ''.join(plist[5]) 
+third_part = ''.join(plist[-8]) + ''.join(plist[-5]) + ''.join(plist[-6])
+new_phrase = first_part + two_part + third_part
+print(plist)  # ['D', 'o', 'n', "'", 't', ' ', 'p', 'a', 'n', 'i', 'c', '!']
+print(new_phrase)  # on tap
